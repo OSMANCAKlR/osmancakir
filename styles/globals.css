@@ -41,7 +41,7 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   color: #333;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .nav__links {
@@ -133,6 +133,8 @@ nav {
 /* ABOUT */
 #about {
   height: 100vh;
+  background-color: #edfefe;
+
 }
 
 .aboutus__title--wrapper {
@@ -228,7 +230,7 @@ nav {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
   border: none;
-  background-color: #111;
+  background-color: #293241;
   color: white;
   height: 44px;
   width: 126px;
@@ -237,4 +239,128 @@ nav {
 
 .about__button:hover {
   transform: translateY(-5%);
+}
+
+
+/* Projects */
+
+#projects {
+  padding-bottom: 84px;
+}
+
+.projects__title--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__title {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.line {
+  height: 8px;
+  width: 44px;
+  border-radius: 14px;
+  background-color: #293241;
+  margin-bottom: 24px;
+}
+
+.projects__para {
+  text-align: center;
+  max-width: 940px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+
+.projects__wrapper {
+  margin-top: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__text--wrapper {
+  margin-left: 68px;
+}
+
+.projects__text--title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.projects__text--para {
+  margin-bottom: 24px;
+  line-height: 2;
+  color: #333;
+}
+
+
+.projects__button {
+  cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+    border: none;
+    background-color: #293241;
+    color: white;
+    height: 44px;
+    width: 126px;
+    transition: all ease 300ms;
+}
+
+
+.projects__button:hover {
+  transform: translateY(-5%);
+}
+
+
+
+/* CONTACT */
+
+#contact {
+  background-color: #e0fbfc;
+}
+
+.contact__title--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.line {
+  height: 8px;
+  width: 44px;
+  border-radius: 14px;
+  background-color: #293241;
+  margin-bottom: 24px;
+}
+
+.contact__para {
+  text-align: center;
+  max-width: 940px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
