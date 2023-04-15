@@ -364,3 +364,17 @@ nav {
   line-height: 1.5;
   letter-spacing: 1px;
 }
+
+/* simplydetail */
+
+
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.project__title {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 44px;
+}

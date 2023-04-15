@@ -4,6 +4,7 @@ import simplydetail from "../assets/simplydetail.jpg";
 import beyhansbakery from '../assets/beyhansbakery.jpg'
 import reactlibrary from '../assets/reactlibrary.jpg'
 import Contact from "@/components/contact";
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -107,7 +108,9 @@ export default function Home() {
                     emphasizing their brand identity and adhering to the latest
                     web design standards.
                   </p>
+                  <Link href='/simplydetail'>
                   <button className="projects__button">See More</button>
+                  </Link>
                 </div>
               </div>
               <div className="projects__wrapper">

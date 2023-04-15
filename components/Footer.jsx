@@ -29,7 +29,7 @@ function Footer() {
               >
                 <FontAwesomeIcon icon={faLinkedinIn} className={styles.icons} />
               </a>
-              <a  target="_blank" rel="no-refferer" href="../assets/OsmanCakirResume.pdf">
+              <a>
                 <FontAwesomeIcon icon={faFile} className={styles.icons} />
               </a>
             </div>
