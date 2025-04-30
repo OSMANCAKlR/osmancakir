@@ -170,6 +170,10 @@
     padding: 30px 20px;
   }
 
+  .form__container {
+    margin: 0px;
+  }
+
   .input__grid {
     grid-template-columns: 1fr;
     gap: 0;

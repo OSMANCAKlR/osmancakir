@@ -31,6 +31,7 @@ a {
 .container {
   padding: 0 5%;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -890,9 +891,17 @@ nav {
     padding: 80px 0;
   }
 
+  #contact {
+    padding: 55px 0px;
+  }
+
+  #hero {
+    padding: 35px 0px;
+  }
+
   #projects .section-title,
   #projects .section-subtitle {
-    font-size: 64px;
+    font-size: 55px;
   }
 
   .skills-cards {
@@ -909,6 +918,10 @@ nav {
   .stats-container {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .section-header {
+    margin-bottom: 35px;
   }
 
   .contact-info {
@@ -933,6 +946,13 @@ nav {
   .section-subtitle {
     font-size: 36px;
   }
+
+  .main-title,
+  .secondary-title {
+    font-size: 55px;
+  }
+
+
 
   .project-card {
     min-width: 100%;
@@ -1540,7 +1560,6 @@ nav {
 /* Image Carousel Styles */
 .carousel-container {
   width: 100%;
-  margin: 40px 0;
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--bg-card);
@@ -1871,6 +1890,7 @@ nav {
   .figma-link-btn {
     padding: 12px 16px;
     min-height: 48px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -2049,7 +2069,7 @@ nav {
 }
 
 .case-study-header {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .case-study-title {
@@ -2067,7 +2087,12 @@ nav {
 }
 
 .case-study-hero {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
+  padding-top: 35px;
+}
+
+.case-overview {
+  margin-bottom: 35px;
 }
 
 .case-study-hero-image {
