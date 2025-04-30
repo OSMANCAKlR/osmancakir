@@ -24,10 +24,10 @@ const Footer = () => {
             <Link href="/" className={styles.footer__link}>
               Home
             </Link>
-            <Link href="/projects" className={styles.footer__link}>
+            <Link href="#projects" className={styles.footer__link}>
               Projects
             </Link>
-            <Link href="/contact" className={styles.footer__link}>
+            <Link href="#contact" className={styles.footer__link}>
               Contact
             </Link>
           </nav>
