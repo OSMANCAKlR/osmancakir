@@ -129,6 +129,11 @@ function Nav() {
               <a href="/#projects">Projects</a>
             </li>
             <li className="nav__link">
+              <a href="/resume.html" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
+            </li>
+            <li className="nav__link">
               <a href="/#contact">Contact</a>
             </li>
           </ul>
@@ -150,6 +155,16 @@ function Nav() {
             <li className="mobile-nav__link">
               <a href="/#projects" onClick={closeMenu}>
                 Projects
+              </a>
+            </li>
+            <li className="mobile-nav__link">
+              <a
+                href="/resume.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+              >
+                Resume
               </a>
             </li>
             <li className="mobile-nav__link">

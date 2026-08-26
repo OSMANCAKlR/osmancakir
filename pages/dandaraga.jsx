@@ -34,7 +34,7 @@ export default function Dandaraga() {
         <title>Dandaraga Springs Case Study | Osman Cakir</title>
         <meta
           name="description"
-          content="Case study of Dandaraga Springs farm-to-table e-commerce project built with Shopify"
+          content="Case study of Dandaraga Springs - WordPress/WooCommerce to Shopify migration built from scratch with Build Your Box, subscriptions, and BeCool"
         />
       </Head>
       <main>
@@ -97,9 +97,10 @@ export default function Dandaraga() {
                     <h3>Technologies</h3>
                     <div className="tech-tags">
                       <span className="tech-tag">Shopify Liquid</span>
+                      <span className="tech-tag">WooCommerce → Shopify</span>
+                      <span className="tech-tag">Subscriptions</span>
                       <span className="tech-tag">JavaScript</span>
                       <span className="tech-tag">BeCool API</span>
-                      <span className="tech-tag">HTML5/CSS3</span>
                       <span className="tech-tag">Figma</span>
                     </div>
                   </div>
@@ -108,13 +109,11 @@ export default function Dandaraga() {
                   <h3>Project Overview</h3>
                   <p>
                     Dandaraga Springs is a premium farm-to-table business that
-                    needed a complete revamp of their online store. I
-                    custom-coded the entire Shopify site, perfectly translating
-                    Figma designs into a functional e-commerce platform. The
-                    centerpiece of this project was a custom "Build Your Box"
-                    component that allows customers to create personalised meat
-                    boxes with starter packs and add-ons, following specific
-                    business rules.
+                    previously ran on WordPress / WooCommerce. I transformed
+                    them onto Shopify - building the storefront from scratch,
+                    handling all client demands, and delivering subscriptions
+                    plus a custom &quot;Build Your Box&quot; flow for
+                    personalised meat boxes with starter packs and add-ons.
                   </p>
                 </div>
               </div>
@@ -128,6 +127,15 @@ export default function Dandaraga() {
               <h2>Key Accomplishments</h2>
               <div className="approach-grid">
                 <div className="approach-card">
+                  <h3>WooCommerce → Shopify Migration</h3>
+                  <p>
+                    Moved the business off WordPress / WooCommerce onto a custom
+                    Shopify storefront built from scratch - preserving brand
+                    presentation while unlocking Shopify merchandising,
+                    checkout, and subscriptions.
+                  </p>
+                </div>
+                <div className="approach-card">
                   <h3>Custom Build Your Box Component</h3>
                   <p>
                     Developed a multi-step selection process (Starter Box →
@@ -138,12 +146,21 @@ export default function Dandaraga() {
                   </p>
                 </div>
                 <div className="approach-card">
+                  <h3>Subscriptions</h3>
+                  <p>
+                    Added subscription purchasing so customers can receive
+                    recurring farm-to-table orders - wired into the Shopify
+                    storefront alongside one-off Build Your Box purchases.
+                  </p>
+                </div>
+                <div className="approach-card">
                   <h3>Pixel-Perfect Implementation</h3>
                   <p>
                     Translated detailed Figma designs into pixel-perfect Shopify
                     theme components. Created custom sections, blocks, and
                     templates to match design specifications exactly while
-                    maintaining responsive layouts.
+                    maintaining responsive layouts. Dealt with all client
+                    demands throughout the build.
                   </p>
                 </div>
                 <div className="approach-card">
@@ -566,19 +583,19 @@ document.addEventListener('DOMContentLoaded', function() {
               <p className="results-summary">
                 Since its launch, Dandaraga Springs has experienced remarkable
                 growth with a 7,400% increase in monthly revenue compared to
-                their old site. The custom "Build Your Box" component and
-                seamless delivery integration have significantly improved the
-                customer experience, resulting in higher conversion rates and
-                increased average order values. The farm-to-table business has
-                successfully expanded its customer base while maintaining its
-                premium brand identity.
+                their old WordPress / WooCommerce site. The custom &quot;Build
+                Your Box&quot; component, subscriptions, and seamless delivery
+                integration have significantly improved the customer experience,
+                resulting in higher conversion rates and increased average order
+                values. The farm-to-table business has successfully expanded its
+                customer base while maintaining its premium brand identity.
               </p>
             </div>
 
             <div className="next-project">
               <h2>Next Project</h2>
-              <Link href="/healthheiress" className="next-project-link">
-                <span>Health Heiress</span>
+              <Link href="/poplocal" className="next-project-link">
+                <span>PopLocal</span>
                 <span className="arrow">→</span>
               </Link>
             </div>

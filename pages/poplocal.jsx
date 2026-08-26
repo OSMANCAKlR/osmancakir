@@ -29,7 +29,7 @@ export default function PopLocal() {
         <title>PopLocal Case Study | Osman Cakir</title>
         <meta
           name="description"
-          content="Case study of PopLocal eCommerce project built with Next.js"
+          content="Case study of PopLocal - eCommerce platform built from scratch with Next.js, Square API, and Contentful"
         />
       </Head>
       <main>
@@ -105,11 +105,11 @@ export default function PopLocal() {
                   <p>
                     PopLocal is an eCommerce platform connecting 300+ local
                     Canberra businesses with customers through a unified
-                    shopping experience. The project involved transforming
-                    detailed Figma mockups into a responsive, high-performance
-                    web application leveraging RESTful APIs for inventory
-                    management, secure checkout processing, user authentication,
-                    and loyalty program integration.
+                    shopping experience. I built the platform from scratch -
+                    transforming detailed Figma mockups into a responsive,
+                    high-performance web application with RESTful APIs for
+                    inventory management, secure checkout processing, user
+                    authentication, and loyalty program integration.
                   </p>
                 </div>
               </div>
@@ -462,8 +462,8 @@ const addToCart = async (product, quantity) => {
 
             <div className="next-project">
               <h2>Next Project</h2>
-              <Link href="/dandaraga" className="next-project-link">
-                <span>Dandaraga Springs</span>
+              <Link href="/chief" className="next-project-link">
+                <span>Chief Nutrition</span>
                 <span className="arrow">→</span>
               </Link>
             </div>

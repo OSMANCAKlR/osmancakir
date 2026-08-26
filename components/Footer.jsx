@@ -1,7 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import styles from "../styles/Footer.module.css";
-import { FaGithubAlt, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaGithubAlt,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +17,9 @@ const Footer = () => {
         <div className={styles.footer__info}>
           <h3 className={styles.footer__title}>Osman Cakir</h3>
           <p className={styles.footer__para}>
-            Crafting digital experiences with creativity and precision. I
-            specialise in building modern, responsive, and user-friendly
-            websites that help businesses grow online.
+            Client-facing Shopify engineer specialising in storefronts, theme
+            migrations, and technical delivery - from discovery through go-live
+            walkthroughs.
           </p>
         </div>
 

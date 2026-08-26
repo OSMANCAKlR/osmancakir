@@ -464,6 +464,137 @@ nav {
   border-color: rgba(16, 185, 129, 0.3);
 }
 
+/* CLIENTS / PROCESS CREATIVE SECTION */
+#clients {
+  padding: 100px 0;
+  background-color: var(--bg-dark);
+  position: relative;
+}
+
+#clients::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-primary),
+    transparent
+  );
+  top: 0;
+  left: 0;
+}
+
+.clients-intro {
+  max-width: 800px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.client-card {
+  display: block;
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.client-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.client-card-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.client-link-icon {
+  color: var(--accent-primary);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.client-card p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.text-project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 320px;
+  padding: 36px 28px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.text-project-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+}
+
+.text-project-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+}
+
+.text-project-description {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.text-project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.beauty-chef-card {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* PROJECTS SECTION */
 #projects {
   padding: 120px 0;
@@ -563,13 +694,16 @@ nav {
 .experience-content {
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .experience-card {
   background-color: var(--bg-card);
   border-radius: 12px;
   padding: 40px;
-  margin-top: 40px;
+  margin-top: 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
@@ -883,6 +1017,14 @@ nav {
   .expertise-content {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #clients {
+    padding: 80px 0;
   }
 }
 

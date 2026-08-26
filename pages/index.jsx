@@ -8,17 +8,18 @@ import ProjectLaptop from "@/components/ProjectLaptop";
 import { useEffect, useState, useRef } from "react";
 import healthheiress from "../assets/healthheiress.png";
 import dandaraga from "../assets/danda1.png";
+import sharkninja from "../assets/sharkninja1.jpg";
+import beautychef from "../assets/beautychef1.jpg";
+import cygnett from "../assets/cygnett1.png";
+import chief from "../assets/chief1.jpg";
 import Contact from "@/components/Contact";
 import {
   FaPhone,
   FaEnvelope,
   FaGlobe,
-  FaTwitter,
-  FaInstagram,
-  FaPalette,
-  FaCogs,
   FaMapMarkerAlt,
   FaLinkedin,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 export default function Home() {
@@ -26,12 +27,12 @@ export default function Home() {
   const [isTyping, setIsTyping] = useState(true);
   const codeRef = useRef(null);
 
-  const codeSnippet = `// Frontend Developer
+  const codeSnippet = `// Senior Software Developer
 const developer = {
   name: 'Osman Cakir',
   location: 'Sydney, NSW',
-  skills: ['React', 'Next.js', 'JavaScript', 'HTML5', 'CSS3'],
-  specialties: ['Figma to Code', 'Responsive Design', 'UI/UX'],
+  skills: ['Shopify Liquid', 'JavaScript', 'React', 'Next.js'],
+  specialties: ['Theme Builds', 'Migrations', 'Client Solutioning'],
   projects: '30+ client websites',
 };`;
 
@@ -46,12 +47,11 @@ const developer = {
 
         if (currentIndex === codeSnippet.length) {
           clearInterval(intervalId);
-          // Add a blinking cursor at the end
           setTimeout(() => {
             setIsTyping(false);
           }, 1000);
         }
-      }, 50); // Adjust speed as needed
+      }, 50);
     }
 
     return () => clearInterval(intervalId);
@@ -60,10 +60,10 @@ const developer = {
   return (
     <>
       <Head>
-        <title>Osman Cakir | Frontend Developer</title>
+        <title>Osman Cakir | Senior Software Developer</title>
         <meta
           name="description"
-          content="Frontend Developer specialising in translating UI/UX designs into high-quality, performant web applications. Based in Sydney, NSW."
+          content="Senior Software Developer specialising in client-facing Shopify delivery - storefronts, theme migrations, and technical solutioning. Based in Sydney, NSW."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -82,8 +82,8 @@ const developer = {
                 </div>
                 <h2 className="profile-name">Osman Cakir</h2>
                 <p className="profile-description">
-                  Frontend Developer based in Sydney, NSW with expertise in
-                  React and Next.js
+                  Senior Software Developer based in Sydney, NSW - Shopify
+                  storefronts, migrations, and client-facing technical delivery
                 </p>
                 <div className="profile-contact">
                   <a href="tel:0435341135" className="contact-item">
@@ -94,6 +94,14 @@ const developer = {
                     className="contact-item"
                   >
                     <FaEnvelope className="contact-icon" /> Email Me
+                  </a>
+                  <a
+                    href="/resume.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-item"
+                  >
+                    Resume / CV
                   </a>
                 </div>
                 <div className="profile-socials">
@@ -147,32 +155,32 @@ const developer = {
                       dangerouslySetInnerHTML={{
                         __html: text
                           .replace(
-                            /(\/\/ Frontend Developer)/g,
-                            '<span class="code-comment">$1</span>'
+                            /(\/\/ Senior Software Developer)/g,
+                            '<span class="code-comment">$1</span>',
                           )
                           .replace(
                             /(const developer)/g,
-                            '<span class="code-const">$1</span>'
+                            '<span class="code-const">$1</span>',
                           )
                           .replace(
                             /(\{|\})/g,
-                            '<span class="code-bracket">$1</span>'
+                            '<span class="code-bracket">$1</span>',
                           )
                           .replace(
                             /(name|location|skills|specialties|projects):/g,
-                            '<span class="code-property">$1</span>'
+                            '<span class="code-property">$1</span>',
                           )
                           .replace(
-                            /('Osman Cakir'|'Sydney, NSW'|'React'|'Next.js'|'JavaScript'|'HTML5'|'CSS3'|'Figma to Code'|'Responsive Design'|'UI\/UX'|'30\+ client websites')/g,
-                            '<span class="code-string">$1</span>'
+                            /('Osman Cakir'|'Sydney, NSW'|'Shopify Liquid'|'JavaScript'|'React'|'Next\.js'|'Theme Builds'|'Migrations'|'Client Solutioning'|'30\+ client websites')/g,
+                            '<span class="code-string">$1</span>',
                           )
                           .replace(
                             /(\[|\])/g,
-                            '<span class="code-array">$1</span>'
+                            '<span class="code-array">$1</span>',
                           )
                           .replace(
                             /(;)/g,
-                            '<span class="code-semicolon">$1</span>'
+                            '<span class="code-semicolon">$1</span>',
                           ),
                       }}
                     ></code>
@@ -183,14 +191,13 @@ const developer = {
                 </div>
 
                 <div className="title-container">
-                  <h1 className="main-title">FRONTEND</h1>
-                  <h1 className="secondary-title">DEVELOPER</h1>
+                  <h1 className="main-title">SHOPIFY</h1>
+                  <h1 className="secondary-title">ENGINEER</h1>
                   <p className="title-description">
-                    Detail-oriented Frontend Developer with a proven ability to
-                    translate UI/UX designs and wireframes into high-quality,
-                    performant, and scalable web applications. Passionate about
-                    crafting seamless, user-friendly, and visually captivating
-                    digital experiences.
+                    Client-facing Shopify engineer who takes outcomes from
+                    conversation to production - clarifying requirements,
+                    building storefronts, owning migrations, and walking clients
+                    through how it works.
                   </p>
                   <a href="#projects" className="see-work-btn">
                     See My Work
@@ -221,7 +228,7 @@ const developer = {
                     </p>
                   </div>
                   <div className="stat-item">
-                    <h2 className="stat-number">2</h2>
+                    <h2 className="stat-number">~4</h2>
                     <p className="stat-label">
                       YEARS OF
                       <br />
@@ -252,61 +259,169 @@ const developer = {
             <div className="expertise-content">
               <div className="expertise-text">
                 <p>
-                  As a Lead Developer at Calico Media, I've successfully
-                  delivered over 30 client projects, specialising in translating
-                  high-fidelity Figma designs into pixel-perfect, functional
-                  websites.
+                  As a Senior Software Developer at Process Creative, I work
+                  directly with enterprise Shopify clients - joining meetings,
+                  making technical decisions, and delivering storefront and
+                  migration work end to end.
                 </p>
                 <p>
-                  My expertise lies in developing responsive, scalable, and
-                  visually accurate user interfaces using React.js/Next.js,
-                  HTML5, ensuring strict adherence to design specifications and
-                  modern web standards.
+                  Previously as Lead Developer at Calico Media, I built Shopify
+                  and Next.js sites from scratch for 30+ clients, translating
+                  Figma designs into production-ready storefronts with custom
+                  Liquid sections and third-party integrations.
                 </p>
                 <p>
-                  I collaborate closely with UI/UX designers throughout the
-                  development lifecycle to ensure technical feasibility and
-                  bridge the gap between design vision and implementation,
-                  directly contributing to meeting client objectives.
+                  I thrive on ownership across the delivery lifecycle:
+                  requirements clarification, technical design, build, client
+                  walkthroughs, and go-live support - explaining complex Shopify
+                  concepts in language clients can act on.
                 </p>
               </div>
 
               <div className="skills-list">
+                <div className="skill-category">
+                  <h3>Shopify & Commerce</h3>
+                  <div className="skills-tags">
+                    <span className="skill-tag">Shopify Liquid</span>
+                    <span className="skill-tag">Online Store</span>
+                    <span className="skill-tag">Theme Migrations</span>
+                    <span className="skill-tag">Shopify 2.0</span>
+                    <span className="skill-tag">Custom Sections</span>
+                    <span className="skill-tag">Client Workshops</span>
+                  </div>
+                </div>
+
                 <div className="skill-category">
                   <h3>Languages & Frameworks</h3>
                   <div className="skills-tags">
                     <span className="skill-tag">JavaScript (ES6+)</span>
                     <span className="skill-tag">React.js</span>
                     <span className="skill-tag">Next.js</span>
-                    <span className="skill-tag">Shopify Liquid</span>
                     <span className="skill-tag">HTML5</span>
                     <span className="skill-tag">CSS3</span>
-                  </div>
-                </div>
-
-                <div className="skill-category">
-                  <h3>Styling & Pre-processors</h3>
-                  <div className="skills-tags">
                     <span className="skill-tag">Tailwind CSS</span>
-                    <span className="skill-tag">CSS Modules</span>
-                    <span className="skill-tag">Styled Components</span>
                   </div>
                 </div>
 
                 <div className="skill-category">
-                  <h3>UI/UX & Design</h3>
+                  <h3>Delivery & Design</h3>
                   <div className="skills-tags">
                     <span className="skill-tag">
                       Figma Design Implementation
                     </span>
-                    <span className="skill-tag">Web Accessibility (WCAG)</span>
+                    <span className="skill-tag">Technical Solutioning</span>
                     <span className="skill-tag">Responsive Design</span>
-                    <span className="skill-tag">
-                      Cross-Browser Compatibility
-                    </span>
+                    <span className="skill-tag">Web Accessibility (WCAG)</span>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="clients">
+          <div className="container">
+            <div className="section-header">
+              <h2 className="section-title">PROCESS</h2>
+              <h2 className="section-subtitle">CREATIVE</h2>
+            </div>
+            <p className="clients-intro">
+              At Process Creative I work as a Senior Software Developer on
+              enterprise Shopify accounts - attending client meetings, owning
+              technical decisions, and shipping storefront work across BAU and
+              project delivery. Shopify stores only.
+            </p>
+            <div className="clients-grid">
+              <Link href="/sharkninja" className="client-card">
+                <div className="client-card-header">
+                  <h3>SharkNinja</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  New unified Shopify store - previously separate Shark Clean
+                  and Ninja Kitchen sites. Built PDPs, cart, and compare;
+                  order/customer migrations; major UAT.
+                </p>
+              </Link>
+              <Link href="/beautychef" className="client-card">
+                <div className="client-card-header">
+                  <h3>The Beauty Chef</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  Led Shopify 1.0 → 2.0 migration end to end - Slate to
+                  proprietary themekit via internal toolkit, full client
+                  communication, and live walkthrough handover.
+                </p>
+              </Link>
+              <Link href="/chief" className="client-card">
+                <div className="client-card-header">
+                  <h3>Chief Nutrition</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  Led client meetings and storefront work - bulk-buy discount UX
+                  plus a custom Shopify app that applies quantity discounts from
+                  product metafields.
+                </p>
+              </Link>
+              <a
+                href="https://bondisands.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="client-card"
+              >
+                <div className="client-card-header">
+                  <h3>Bondi Sands</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  Assisted with the launch of the new site - storefront
+                  development supporting go-live for the refreshed brand
+                  experience.
+                </p>
+              </a>
+              <a
+                href="https://www.mocka.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="client-card"
+              >
+                <div className="client-card-header">
+                  <h3>Mocka</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  Shopify development and technical support on an active
+                  enterprise account, including client-facing technical
+                  discussions.
+                </p>
+              </a>
+              <Link href="/cygnett" className="client-card">
+                <div className="client-card-header">
+                  <h3>Cygnett</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  General Shopify development with a focus on product detail
+                  pages across the live AU accessories storefront.
+                </p>
+              </Link>
+              <a
+                href="https://www.strangelove.com.au/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="client-card"
+              >
+                <div className="client-card-header">
+                  <h3>Strangelove</h3>
+                  <FaExternalLinkAlt className="client-link-icon" />
+                </div>
+                <p>
+                  Shopify storefront development and technical support on an
+                  active brand account.
+                </p>
+              </a>
             </div>
           </div>
         </section>
@@ -319,11 +434,64 @@ const developer = {
             </div>
 
             <div className="projects-grid">
+              <Link href="/sharkninja" className="project-card">
+                <ProjectLaptop
+                  image={sharkninja}
+                  title="SharkNinja"
+                  description="New unified Shopify store - Shark Clean and Ninja Kitchen were separate sites. Built PDPs, cart, and compare; migrated orders and customers; major UAT."
+                  link="/sharkninja"
+                  tags={[
+                    "Shopify",
+                    "Liquid",
+                    "PDPs",
+                    "Cart",
+                    "Compare",
+                    "Migration",
+                  ]}
+                />
+              </Link>
+
+              <Link href="/beautychef" className="project-card">
+                <ProjectLaptop
+                  image={beautychef}
+                  title="The Beauty Chef"
+                  description="Led Shopify 1.0 → 2.0 migration end to end - Slate to proprietary themekit via internal toolkit, full client communication, and live walkthrough handover."
+                  link="/beautychef"
+                  tags={[
+                    "Shopify 2.0",
+                    "Migration",
+                    "Slate",
+                    "Themekit",
+                    "Liquid",
+                  ]}
+                />
+              </Link>
+
+              <Link href="/dandaraga" className="project-card">
+                <ProjectLaptop
+                  image={dandaraga}
+                  title="Dandaraga Springs"
+                  description="Transformed WordPress / WooCommerce to Shopify from scratch - Build Your Box, subscriptions, BeCool courier integration, and full client ownership."
+                  link="/dandaraga"
+                  stats={[
+                    { value: "253K+", label: "Page Visits" },
+                    { value: "7400%", label: "Revenue Increase" },
+                  ]}
+                  tags={[
+                    "Shopify",
+                    "WooCommerce Migration",
+                    "Subscriptions",
+                    "Build Your Box",
+                    "BeCool API",
+                  ]}
+                />
+              </Link>
+
               <Link href="/poplocal" className="project-card">
                 <ProjectLaptop
                   image={poplocal}
                   title="PopLocal"
-                  description="Advanced eCommerce platform connecting 300+ local Canberra businesses with customers. Built with Next.js, featuring Square API integration, real-time inventory sync, and a headless CMS solution."
+                  description="Built from scratch - advanced eCommerce platform connecting 300+ local Canberra businesses with customers. Next.js, Square API, real-time inventory sync, and a headless CMS."
                   link="/poplocal"
                   stats={[
                     { value: "25K+", label: "Page Visits" },
@@ -336,27 +504,6 @@ const developer = {
                     "Contentful",
                     "Firebase",
                     "RESTful APIs",
-                  ]}
-                />
-              </Link>
-
-              <Link href="/dandaraga" className="project-card">
-                <ProjectLaptop
-                  image={dandaraga}
-                  title="Dandaraga Springs"
-                  description="Custom Shopify development for a farm-to-table business featuring a unique 'Build Your Box' component. Pixel-perfect implementation of Figma designs with custom courier API integration for delivery management."
-                  link="/dandaraga"
-                  stats={[
-                    { value: "253K+", label: "Page Visits" },
-                    { value: "7400%", label: "Revenue Increase" },
-                  ]}
-                  tags={[
-                    "Shopify",
-                    "Liquid",
-                    "JavaScript",
-                    "BeCool API",
-                    "Custom Components",
-                    "CRO",
                   ]}
                 />
               </Link>
@@ -391,14 +538,40 @@ const developer = {
                   ]}
                 />
               </Link>
+
+              <Link href="/chief" className="project-card">
+                <ProjectLaptop
+                  image={chief}
+                  title="Chief Nutrition"
+                  description="Led client meetings and Shopify storefront work - bulk-buy discount UX and a custom app that discounts by quantity using product metafields the client controls."
+                  link="/chief"
+                  tags={[
+                    "Shopify",
+                    "Custom App",
+                    "Metafields",
+                    "Bulk Discount",
+                    "Liquid",
+                  ]}
+                />
+              </Link>
+
+              <Link href="/cygnett" className="project-card">
+                <ProjectLaptop
+                  image={cygnett}
+                  title="Cygnett"
+                  description="General Shopify development at Process Creative with a focus on product detail pages across the live AU accessories storefront."
+                  link="/cygnett"
+                  tags={["Shopify", "Liquid", "PDPs", "JavaScript"]}
+                />
+              </Link>
             </div>
 
             <div className="more-projects-cta">
               <h3>And Many More...</h3>
               <p>
                 These featured projects represent just a small sample of my
-                work. I'd be happy to discuss more projects and how I can help
-                bring your vision to life.
+                work. I&apos;d be happy to discuss more projects and how I can
+                help bring your vision to life.
               </p>
               <a href="#contact" className="see-work-btn">
                 Contact Me
@@ -431,34 +604,83 @@ const developer = {
             <div className="experience-content">
               <div className="experience-card">
                 <div className="experience-header">
-                  <h3 className="experience-title">Lead Developer</h3>
-                  <span className="experience-company">Calico Media</span>
-                  <span className="experience-duration">2023 - Present</span>
+                  <h3 className="experience-title">
+                    Senior Software Developer
+                  </h3>
+                  <span className="experience-company">
+                    Process Creative - Shopify Premier Partner
+                  </span>
+                  <span className="experience-duration">
+                    Jun 2025 – Present · ~1 yr 4 mo
+                  </span>
                 </div>
                 <div className="experience-description">
                   <p>
-                    Led frontend development for 30+ diverse client projects,
-                    specialising in translating high-fidelity Figma designs into
-                    pixel-perfect, functional web applications.
+                    Shopify-only client work at a Premier Partner. Promoted to
+                    Senior in Jun 2026. Client meetings, technical decisions,
+                    storefront delivery, migrations, UAT, and custom apps when
+                    themes aren&apos;t enough.
                   </p>
                   <ul className="experience-bullets">
                     <li>
-                      Developed responsive UIs using React.js/Next.js, HTML5,
-                      Tailwind CSS
+                      Enterprise accounts including SharkNinja, Cygnett, Bondi
+                      Sands, The Beauty Chef, Chief Nutrition, Mocka, and
+                      Strangelove
                     </li>
                     <li>
-                      Collaborated with UI/UX designers to ensure technical
-                      feasibility
+                      SharkNinja unified store - previously separate Shark Clean
+                      and Ninja Kitchen sites; built PDPs, cart, and compare;
+                      order/customer migrations; major UAT
                     </li>
                     <li>
-                      Implemented complex UI components with focus on
-                      performance and accessibility
+                      Led The Beauty Chef Shopify 1.0 → 2.0 migration (Slate to
+                      proprietary themekit), including all client communication
+                      and a live walkthrough handover
                     </li>
                     <li>
-                      Managed multiple concurrent projects while meeting
-                      deadlines
+                      Chief Nutrition - led client meetings; bulk-buy discount
+                      UX; custom Shopify app applying quantity discounts from
+                      product metafields
                     </li>
-                    <li>Created and maintained reusable component libraries</li>
+                    <li>
+                      Built custom Shopify apps for client-specific logic; Bondi
+                      Sands launch support; Cygnett PDPs; Mocka &amp;
+                      Strangelove storefront work
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-card">
+                <div className="experience-header">
+                  <h3 className="experience-title">Lead Developer</h3>
+                  <span className="experience-company">Calico Media</span>
+                  <span className="experience-duration">2023 – Jun 2025</span>
+                </div>
+                <div className="experience-description">
+                  <p>
+                    Led development for 30+ client projects - greenfield Shopify
+                    and Next.js builds from scratch, with a focus on custom
+                    storefronts and pixel-perfect Figma implementation.
+                  </p>
+                  <ul className="experience-bullets">
+                    <li>
+                      Transformed Dandaraga Springs from WordPress / WooCommerce
+                      to Shopify from scratch - Build Your Box, subscriptions,
+                      BeCool courier API, and full client ownership
+                    </li>
+                    <li>
+                      Built PopLocal from scratch - Next.js eCommerce platform
+                      with Square API, Contentful, and Firebase
+                    </li>
+                    <li>
+                      Delivered custom Shopify Liquid sections, templates, and
+                      CRO-focused storefront work across multiple brands
+                    </li>
+                    <li>
+                      Managed multiple concurrent projects while collaborating
+                      with designers and meeting client deadlines
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -473,8 +695,8 @@ const developer = {
             </div>
             <div className="contact-content">
               <p className="contact-description">
-                Interested in working together? I'm currently available for new
-                projects and opportunities. Feel free to reach out!
+                Interested in working together? I&apos;m currently available for
+                new projects and opportunities. Feel free to reach out!
               </p>
               <div className="contact-details">
                 <div className="contact-info">
